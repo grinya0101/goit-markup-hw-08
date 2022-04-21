@@ -1,0 +1,16 @@
+/*кнопка заказать услугу*/
+.hero__button {
+    color: var(--main-tetle-text);
+    background-color: var(--primary-text-color);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

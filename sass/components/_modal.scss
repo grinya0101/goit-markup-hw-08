@@ -1,0 +1,334 @@
+/*Модальное окно*/
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal {
+    min-height: 581px;
+    min-width: 528px;
+    background-color: var(--main-tetle-text);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buttom__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+    background: #ffffff;
+}
+
+.buttom__close:before,
+.buttom__close:after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 4px;
+    width: 20px;
+    height: 2px;
+    background: #000000;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buttom__close:before {
+    webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.buttom__close:after {
+    webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.buttom__close:hover::before {
+    background-color: var(--primary-text-color);
+}
+
+.buttom__close:hover::after {
+    background-color: var(--primary-text-color);
+}
+
+.buttom__close:focus::before {
+    background-color: var(--primary-text-color);
+}
+
+.buttom__close:focus::after {
+    background-color: var(--primary-text-color);
+}
+
+.form {
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form__field {
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--title-text-color);
+}
+
+.form__field {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+
+    &:focus-within {
+        fill: #2196f3;
+    }
+}
+
+
+
+.form__user {
+    position: absolute;
+    top: 107px;
+    left: 56px;
+    width: 12px;
+    height: 12px;
+}
+
+.form__phone {
+    position: absolute;
+    top: 174px;
+    left: 55px;
+    width: 13px;
+    height: 13px;
+}
+
+.form__mail {
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    top: 243px;
+    left: 54px;
+}
+
+.form__name {
+    display: block;
+    height: 40px;
+    position: relative;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 12px;
+
+    color: var(--accent-color);
+}
+
+
+
+.form label {
+    margin-bottom: 4px;
+}
+
+.form input {
+    margin: 0;
+    padding: 6px 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid var(--primary-text-color);
+}
+
+
+
+.form input::placeholder {
+    padding-left: 16px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form__agree {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--title-text-color);
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.form__agree input {
+    margin-right: 8px;
+}
+
+.form__agree label {
+    display: flex;
+    align-items: center;
+}
+
+
+
+textarea:focus {
+    border: 1px solid var(--primary-text-color);
+}
+
+
+.form__comment {
+    padding: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 120px;
+    color: rgba(117, 117, 117, 0.5);
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+.visually-hidden:checked+.form__lable {
+    border-color: #2196f3;
+    background-color: #2196f3;
+    background-image: url("../image/modal/check.svg");
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+}
+
+.visually-hidden:focus+.form__lable {
+    border-color: #2196f3;
+}
+
+.form__lable {
+    display: inline-block;
+    border: 2px solid var(--accent-color);
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+
+
+.button__send {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: var(--primary-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--main-tetle-text);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+}
+
+
+.form__link {
+    color: #2196f3;
+    text-decoration: underline;
+}
+
+/*секция особенности*/
+.plan {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.plan__title {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.plan__list {
+    display: flex;
+}
+
+.plan__item {
+    width: 270px;
+    margin-right: 30px;
+    font-size: 14px;
+    line-height: 1.7;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.plan__item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: #f5f4fa;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.plan__icon::before {
+    background-image: url("../image/icon/antenna.svg");
+}
+
+.plan__vector::before {
+    background-image: url("../image/icon/clock.svg");
+}
+
+.plan__diagram::before {
+    background-image: url("../image/icon/diagram.svg");
+}
+
+.plan__astronaut::before {
+    background-image: url("../image/icon/astronaut.svg");
+}
+
+
+.plan__advantage {
+    font-size: 14px;
+    line-height: 1.71;
+}
