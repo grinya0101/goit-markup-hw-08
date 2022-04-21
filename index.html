@@ -37,24 +37,33 @@
                         <use href="./image/contacts/contacts.svg#icon-phone"></use>
                     </svg>+38 096 111 11 11</a></li>
                    </ul>
+
+                <button class="menu-btn" type="button" aria-label="кнопка открытия меню">
+                    <svg class="menu-btn__icon" width="40" height="40">
+                        
+                        <use class="menu-btn__icon-open" href="./image/icon/icon_close_menu.svg#open_menu_icon"></use> 
+
+                        <use class="menu-btn__icon-close" href="./image/icon/icon_close_menu.svg#close_menu-icon"></use>
+                    </svg>
+                </button>
               
     </div>
         </header>
 
 <!-- Уникальный контент -->
 <main>
-    <!-- секция герой-->
+    <!-- секция герой -->
 
     
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container container__hero">
             <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
     
             <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section>
+      </section> -->
     <!-- cекция Особенности -->
-    <section class="plan"> 
+    <!-- <section class="plan"> 
          
     <div class="container">
            <ul class="plan__list">
@@ -76,10 +85,10 @@
                 </li>
            </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- Чем мы занимаемся -->
-    <section class="about">
+    <!-- <section class="about">
         <div class="container">
                 <h2 class="about__title">Чем мы занимаемся</h2>
                 <ul class="about__list">
@@ -104,11 +113,11 @@
            </div>
      
     </section>
-   
+    -->
         
         
         <!-- Наша команда -->
-    <section class="team">
+    <!-- <section class="team">
         <div class="container">
             <h2 class="team__caption">Наша команда</h2>
             <ul class="team__list">
@@ -239,9 +248,9 @@
                 </li>
             </ul>
 </div>
-    </section>
+    </section> -->
 <!-- Клиенты -->
-    <section class="clients">
+    <!-- <section class="clients">
         <div class="container">
             <h2 class="clients-title">Постоянные клиенты</h2>
             <ul class="clients__list">
@@ -254,10 +263,10 @@
         
             </ul>
         </div>
-    </section>
+    </section> -->
 </main>
 <!-- Секция футер -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container container__footer">
             <div class="footer__wrapper">
                 <a class="footer__link" href="./index.html"><span class="footer__logo">Web</span><span
@@ -307,8 +316,8 @@
            </div>
         </div>
     
-    </footer>
-    -- Модальное окно -->
+    </footer> -->
+    <!-- Модальное окно
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close class="buttom__close"></button>
@@ -353,6 +362,46 @@
             
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <--мобильное меню -->
+    <div class="mobile-menu">
+       <nav class="mobile-nav">
+         <ul class="mobile-nav__list">
+             <li class="mobile-nav__item">
+                 <a href="" class="mobile-nav__link">Студия</a>
+                </li>
+             <li class="mobile-nav__item">
+                 <a href="" class="mobile-nav__link">Портфолио</a>
+                </li>
+             <li class="mobile-nav__item">
+                 <a href="" class="mobile-nav__link">Контакты</a>
+                </li>
+         </ul>
+
+        <ul class="mobile-contacts">
+            <li class="mobile-contacts__item">
+                <a href="" class="mobile-contacts__link" href="tel: +380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+                <a href="" class="mobile-contacts__link" href="mailtoo:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-socials">
+            <li class="mobile-socials__item">
+                <a href="" class="mobile_socials__link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="" class="mobile_socials__link" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="" class="mobile_socials__link" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="" class="mobile_socials__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+        </ul>
+       </nav>
+    </div>
+    <!-- <script src="./js/modal.js"></script>
 </body>
 </html>
