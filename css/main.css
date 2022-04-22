@@ -106,16 +106,40 @@ a {
   display: flex;
   align-items: center;
 }
+
 .header__link {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   margin-right: 93px;
 }
+@media screen and (max-width: 768px) {
+  .header__link {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .header__link {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 767px) {
+  .header__link {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__link {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 
-.nav {
-  display: none;
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -173,12 +197,30 @@ a {
 }
 
 .contacts {
-  display: none;
+  display: flex;
   margin-left: auto;
+  flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+  }
 }
 
-.contacts__link {
-  margin-right: 50px;
+@media screen and (min-width: 767px) {
+  .contacts__link {
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    margin-right: 50px;
+  }
 }
 
 .contacts__icon--phone {
@@ -224,11 +266,23 @@ a:focus .contacts__icon--phone {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
   align-items: center;
   display: flex;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 767px) {
+  .contacts__phone,
+.contacts__mail {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__phone,
+.contacts__mail {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__phone:hover,
@@ -244,6 +298,10 @@ a:focus .contacts__icon--phone {
   left: 0;
   width: 100vw;
   height: 100vh;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 300ms;
+  pointer-events: none;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .mobile-menu {
@@ -251,11 +309,18 @@ a:focus .contacts__icon--phone {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
 }
+.mobile-menu.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  pointer-events: initial;
+}
 
 .mobile-nav {
   width: 100%;
   height: 100%;
   background-color: #FFFFFF;
+  padding-top: 48px;
+  padding-left: 40px;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .mobile-nav {
@@ -275,15 +340,20 @@ a:focus .contacts__icon--phone {
   outline: transparent;
   z-index: 99;
 }
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
 .menu-btn__icon {
   width: 40px;
   height: 40px;
 }
 .menu-btn__icon-open {
-  opacity: 1;
+  opacity: 0;
 }
 .menu-btn__icon-close {
-  opacity: 0;
+  opacity: 1;
 }
 
 .menu-btn.is-active .menu-btn__icon-open {
@@ -1035,6 +1105,11 @@ textarea:focus {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    font-size: 26px;
+  }
 }
 
 .header__lable {
