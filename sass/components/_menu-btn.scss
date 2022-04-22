@@ -2,10 +2,19 @@
     display: block;
     width: 40px;
     height: 40px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
 
     background-color: transparent;
     border: transparent;
     outline: transparent;
+
+    // transform: translateX(100%);
+
+    // &.is-active{
+    //     transform: translateX(0);
+    // }
 
     &__icon{
         width: 40px;
@@ -21,3 +30,25 @@
         }
     }
 }
+
+.menu-btn.is-active .menu-btn__icon-open{
+    opacity: 1;
+}
+
+.menu-btn.is-active .menu-btn__icon-close {
+    opacity: 0;
+}
+
+
+// .menu-btn .menu-btn__icon-close {
+//     opacity: 0;
+// }
+
+
+// .menu-btn.is-open .menu-btn__icon-close{
+//     opacity: 1;
+// }
+
+// .menu-btn.is-open .menu-btn__icon-open {
+//     opacity: 0;
+// }

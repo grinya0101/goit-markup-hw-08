@@ -38,7 +38,7 @@
                     </svg>+38 096 111 11 11</a></li>
                    </ul>
 
-                <button class="menu-btn" type="button" aria-label="кнопка открытия меню">
+                <button class="menu-btn is-open" type="button" aria-label="кнопка открытия меню" data-menu-button aria-expanded="false">
                     <svg class="menu-btn__icon" width="40" height="40">
                         
                         <use class="menu-btn__icon-open" href="./image/icon/icon_close_menu.svg#open_menu_icon"></use> 
@@ -363,7 +363,7 @@
         </div>
     </div>
     <--мобильное меню -->
-    <div class="mobile-menu">
+    <div class="mobile-menu" data-menu>
        <nav class="mobile-nav">
          <ul class="mobile-nav__list">
              <li class="mobile-nav__item">
@@ -402,6 +402,7 @@
         </ul>
        </nav>
     </div>
+    <script src="./js/menu.js"></script>
     <!-- <script src="./js/modal.js"></script>
 </body>
 </html>

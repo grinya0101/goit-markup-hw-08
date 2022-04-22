@@ -242,6 +242,9 @@ a:focus .contacts__icon--phone {
   display: block;
   width: 40px;
   height: 40px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
   background-color: transparent;
   border: transparent;
   outline: transparent;
@@ -254,6 +257,14 @@ a:focus .contacts__icon--phone {
   opacity: 1;
 }
 .menu-btn__icon-close {
+  opacity: 0;
+}
+
+.menu-btn.is-active .menu-btn__icon-open {
+  opacity: 1;
+}
+
+.menu-btn.is-active .menu-btn__icon-close {
   opacity: 0;
 }
 
