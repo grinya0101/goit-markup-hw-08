@@ -1,4 +1,5 @@
 .header {
+    
     border-bottom: 1px solid #ececec;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -11,10 +12,12 @@
 
      @media screen and (min-width: 1200px) {
             padding-top: 24px;
+  
             padding-bottom: 25px;
-
-     }
+            
+      }
 }
+
 
 
 
@@ -22,6 +25,7 @@
 .container__nav {
     display: flex;
     align-items: center;
+    
 
   
 }
