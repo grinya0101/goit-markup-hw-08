@@ -1015,6 +1015,7 @@ textarea:focus {
   justify-content: center;
   flex-wrap: wrap;
   margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .clients__item {
