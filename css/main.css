@@ -1307,6 +1307,17 @@ textarea:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    max-width: 570px;
+  }
+}
+
 .subscribe__form input::placeholder {
   padding: 16px;
 }

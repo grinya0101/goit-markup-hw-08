@@ -238,6 +238,20 @@
 
 }
 
+.subscribe {
+    
+   
+
+    
+    @media screen and (max-width: 1199px) {
+        margin-top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 570px;
+    }
+
+}
 
 
 .subscribe__form input::placeholder {
@@ -287,6 +301,7 @@
     color: var(--main-tetle-text);
     padding-right: 29px;
 }
+
 
 .subscribe__icon {
     position: absolute;
