@@ -1,7 +1,7 @@
 /*футер*/
 .footer {
     background: #2f303a;
-    margin: 0;
+
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -34,6 +34,7 @@
     @media screen and (min-width: 1200px) {
         margin-right: 70px;
         flex-grow: 1;
+        margin-bottom: -60px;
     }
 
    
@@ -105,7 +106,7 @@
    }
 
     @media screen and (min-width: 1200px) {
-       justify-content: center;
+       justify-content: left;
        flex-wrap: nowrap;
        
    }
@@ -161,13 +162,22 @@
 
 
 .social-media__join {
+
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+    
+    
+
+
 }
 
 .social-media__team {
@@ -278,7 +288,9 @@
 
 
 .subscribe__button {
-    // width: 200px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -312,14 +324,13 @@
     line-height: 30px;
     letter-spacing: 0.06em;
     color: var(--main-tetle-text);
-    padding-right: 29px;
+     margin-right: 10px;
 }
 
 
 .subscribe__icon {
-    position: absolute;
+    
     width: 24px;
     height: 24px;
-    top: 13px;
-    left: 148px;
+    
 }
