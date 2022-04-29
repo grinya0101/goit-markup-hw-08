@@ -1422,11 +1422,16 @@ textarea:focus {
 .features__benefits {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 480px) and (man-width: 768px) {
+  .features__benefits {
+    justify-content: start;
+  }
 }
 @media screen and (min-width: 768px) {
   .features__benefits {
+    justify-content: center;
     margin-bottom: 30px;
   }
 }
