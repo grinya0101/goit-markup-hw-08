@@ -1424,7 +1424,7 @@ textarea:focus {
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
-@media screen and (min-width: 480px) and (man-width: 768px) {
+@media screen and (min-width: 480px) and (man-width: 767px) {
   .features__benefits {
     justify-content: start;
   }
