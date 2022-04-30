@@ -10,8 +10,8 @@
 }
 
 .team__list {
-
-    
+     
+    justify-content: center;
    @media screen and (min-width: 767px) {
          display: flex;
          flex-wrap: wrap;
@@ -25,9 +25,6 @@
     }
   
 }
-
-
-
 
 
 

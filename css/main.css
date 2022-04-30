@@ -51,6 +51,7 @@ a {
 }
 
 img {
+  max-width: 100%;
   display: block;
   height: auto;
 }
@@ -961,6 +962,9 @@ textarea:focus {
   padding-bottom: 94px;
 }
 
+.team__list {
+  justify-content: center;
+}
 @media screen and (min-width: 767px) {
   .team__list {
     display: flex;
