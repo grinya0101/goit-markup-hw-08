@@ -24,8 +24,9 @@
 }
 
 .modal {
-    min-height: 581px;
-    min-width: 528px;
+
+
+   
     background-color: var(--main-tetle-text);
 
     position: absolute;
@@ -34,6 +35,30 @@
     transform: translate(-50%, -50%) scale(1);
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 479px) {
+        width: 95%;
+        height: 95%;
+    }
+    
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 609px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
+
+
+
+
+
+
+
+
+
 }
 
 .buttom__close {
@@ -61,12 +86,12 @@
 }
 
 .buttom__close:before {
-    webkit-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .buttom__close:after {
-    webkit-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
@@ -90,6 +115,13 @@
     padding: 40px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (max-width: 767px) {
+        overflow-x: scroll;
+    }
+
+
+
 }
 
 .form__field {
@@ -115,27 +147,60 @@
 
 
 .form__user {
+
     position: absolute;
-    top: 107px;
-    left: 56px;
+    top: 130px;
+    left: 55px;
     width: 12px;
     height: 12px;
+    
+     
+    
+
+    @media screen and (min-width: 1200px) {
+        top: 107px;
+        left: 56px;
+        width: 12px;
+        height: 12px;
+    }
+
+    
+
+
+
 }
 
 .form__phone {
     position: absolute;
-    top: 174px;
+    top: 200px;
     left: 55px;
     width: 13px;
     height: 13px;
+
+    @media screen and (min-width: 1200px) {
+        top: 174px;
+        left: 55px;
+        width: 13px;
+        height: 13px;
+    }
+
 }
 
 .form__mail {
     position: absolute;
     width: 15px;
     height: 12px;
-    top: 243px;
+    top: 266px;
     left: 54px;
+    
+    @media screen and (min-width: 1200px) {
+        top: 243px;
+        left: 54px;
+        width: 15px;
+        height: 12px;
+    }
+
+
 }
 
 .form__name {
@@ -185,12 +250,21 @@ input:focus {
 }
 
 .form__agree {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: var(--title-text-color);
-    margin-bottom: 30px;
-    display: flex;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    
+    @media screen and (max-width: 479px) {
+        font-size: 9px;
+        line-height: 1.1;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
 }
 
 .form__agree input {
@@ -261,6 +335,7 @@ textarea:focus {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.06em;
+    margin-top: 30px;
 }
 
 
