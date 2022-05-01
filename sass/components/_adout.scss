@@ -8,13 +8,27 @@
 
 
 .about__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
     display: flex;
-    margin-right: -30px;
+    flex-wrap: wrap;
+    
+    
+    margin-left: -30px;
+    margin-top: -30px;
+    
+
 }
 
+
+
+
+
 .about__item {
-    flex-basis: calc((100% - 3 * 60px) / 3);
-    margin-right: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
     position: relative;
 }
 

@@ -18,16 +18,11 @@
 
 .footer__wrapper {
      
-    margin-bottom: 60px;
+  
 
-    @media screen and (min-width: 768px) {
-       
-        margin-right: 165px;
+    
 
-        
-    }
-
-    @media screen and (man-width: 1199px) {
+    @media screen and (max-width: 1199px) {
         justify-content: center;
     }
 
@@ -216,11 +211,8 @@
 .subscribe__form {
     margin-top: 20px;
 
-    @media screen and (min-width: 768px) {
-         flex-wrap: nowrap;
-        align-items: center;
     
-    }
+    
     
     @media screen and (min-width: 1200px) {
         display: flex;
