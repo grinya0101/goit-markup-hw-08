@@ -1086,6 +1086,7 @@ textarea:focus {
   padding: 0;
   margin: 0;
   list-style: none;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -1377,6 +1378,11 @@ textarea:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe {
+    flex-wrap: nowrap;
+  }
+}
 @media screen and (max-width: 1199px) {
   .subscribe {
     margin-top: 60px;
