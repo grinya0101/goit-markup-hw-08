@@ -308,6 +308,8 @@ a:focus .contacts__icon--phone {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 @media screen and (min-width: 767px) {
   .plan__list {
@@ -326,6 +328,10 @@ a:focus .contacts__icon--phone {
   }
 }
 
+.plan__item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
 @media screen and (min-width: 767px) {
   .plan__item {
     flex-basis: calc(50% - 30px);
@@ -1569,6 +1575,7 @@ textarea:focus {
   list-style: none;
   margin-left: 30px;
   margin-top: 30px;
+  align-items: stretch;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .project__item {
