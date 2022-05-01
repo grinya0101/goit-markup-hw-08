@@ -1365,11 +1365,6 @@ textarea:focus {
     max-width: 450px;
   }
 }
-@media screen and (min-width: 480px) {
-  .footer-input {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-input {
     max-width: 100%;
