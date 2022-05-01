@@ -212,6 +212,8 @@
     margin-top: 20px;
 
     
+
+    
     
     
     @media screen and (min-width: 1200px) {
@@ -256,8 +258,11 @@
 
 .subscribe {
     
+    
     @media screen and (min-width: 768px) {
-       flex-wrap: nowrap;
+       
+        flex-direction: column;
+       
     }
 
     

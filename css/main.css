@@ -1380,7 +1380,7 @@ textarea:focus {
 
 @media screen and (min-width: 768px) {
   .subscribe {
-    flex-wrap: nowrap;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 1199px) {
